@@ -1,0 +1,16 @@
+
+
+.background-image {
+  background-image: url("../images/mountain.jpg");
+  position: fixed;
+
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  height: 100vh;
+
+  background-position: center;
+  background-size: cover;
+}

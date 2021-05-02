@@ -1,26 +1,13 @@
 import React from "react";
+import '../static/styles/global.scss'
 
-import {Container, Grid, Typography } from "@material-ui/core";
+import {Box, Grid, Paper} from "@material-ui/core";
 
-const Layout = () => {
+const LoginLayout = props =>
+{
 
-	return (
-		<Container>
-			<Grid
-				container
-				direction={"column"}
-				justify={"center"}
-				alignContent={"center"}
-				alignItems={"center"}
-				spacing={2}
-				style={{ height: "100vh" }}
-			>
-				<Grid item>
-					<Typography variant={"h2"}>Hello World!</Typography>
-				</Grid>
-			</Grid>
-		</Container>
-	);
+
+
 };
 
-export default Layout;
+export default LoginLayout;
