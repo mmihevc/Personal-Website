@@ -11,7 +11,7 @@ function Home(props) {
             <Box height={'100vh'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
                 <Paper elevation={8} style={{height: '80vh', position: "relative", width: '150vh'}}>
                     <Box display='flex' height={'100%'}>
-                        <Box width='200px' height={'100%'} style={{position: 'relative'}}>
+                        <Box width='200px' height={'100%'}>
                             <Navigation/>
                         </Box>
                         <Box flexGrow={1}>
