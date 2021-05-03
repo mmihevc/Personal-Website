@@ -1,21 +1,21 @@
 import React from "react";
-
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import {SnackbarProvider, useSnackbar} from "notistack";
 
-import Layout from "./Layout";
 import Home from "./Home";
+import Contact from "./Contact";
 
 const Router = () => {
 	return (
 		<Switch>
 			<Route exact path='/'>
-
 				<Home/>
-
+			</Route>
+			<Route path='/contact'>
+				<Contact/>
 			</Route>
 		</Switch>
 	)
