@@ -1,6 +1,5 @@
 import React from 'react';
 import {Box, Paper} from "@material-ui/core";
-
 import Navigation from "./utils/Navigation";
 import '../static/styles/global.scss'
 import Profile from "./utils/Profile";
