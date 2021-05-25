@@ -14,6 +14,9 @@ function Navigation() {
                         <Typography onClick={() => history.push('/')}>Home</Typography>
                     </Box>
                     <Typography onClick={() => history.push('/contact')}>Contact</Typography>
+                    <Box pt={2}>
+                        <Typography>Resume</Typography>
+                    </Box>
                 </Box>
             </Box>
             <Box height={210} width={'100%'} p={2}>

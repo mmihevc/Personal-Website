@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Paper, Typography} from "@material-ui/core";
 import Navigation from "./utils/Navigation";
+import ContactForm from './utils/ContactForm'
 
 function Contact() {
    return (
@@ -13,7 +14,7 @@ function Contact() {
                       <Navigation/>
                    </Box>
                    <Box flexGrow={1}>
-
+                        <ContactForm/>
                    </Box>
                 </Box>
              </Paper>
