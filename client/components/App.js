@@ -8,11 +8,11 @@ import {SnackbarProvider, useSnackbar} from "notistack";
 import Home from "./Home";
 import Contact from "./Contact";
 
-const Router = () => {
+const Router = (props) => {
 	return (
 		<Switch>
 			<Route exact path='/'>
-				<Home/>
+				<Home {...props}/>
 			</Route>
 			<Route path='/contact'>
 				<Contact/>

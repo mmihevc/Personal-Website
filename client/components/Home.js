@@ -5,7 +5,7 @@ import '../static/styles/global.scss'
 import Profile from "./utils/Profile";
 import ProfileImage from '../static/images/profile.jpeg'
 
-function Home() {
+function Home(props) {
     return (
         <>
             <div className={"background-image"} />
@@ -13,7 +13,7 @@ function Home() {
                 <Paper elevation={8} style={{height: '80vh', position: "relative", width: '150vh'}}>
                     <Box display='flex' height={'100%'}>
                         <Box width='200px' height={'100%'}>
-                            <Navigation/>
+                            <Navigation {...props}/>
                         </Box>
                         <Box flexGrow={1}>
                             <Profile/>
