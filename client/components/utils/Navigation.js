@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import { useStyles } from "./Constants";
 import Logo from "../../static/images/logo.png";
 import GetAppIcon from "@material-ui/icons/GetApp";
-import Resume from "../../static/maddie-resume.pdf";
+
 
 function Navigation() {
   const history = useHistory();
@@ -13,12 +13,20 @@ function Navigation() {
 
 
   function ResumeModal() {
+
+    function downloadResume() {
+      let a = document.createElement('a');
+      a.href = './maddie-resume.pdf';
+      a.setAttribute('download', 'maddie-resume.pdf');
+      a.click();
+    }
+
     return (
       <Modal open={resumePopup} className={classes.modal} onClose={() => setResumePopup(!resumePopup)}>
         <div className={classes.paper}>
           <Box display={"flex"} justifyContent={"center"}>
             <Typography align={'center'}>Would you like to download a copy of Maddie's resume?</Typography>
-            <IconButton style={{backgroundColor: '#2A8FC5', borderRadius: 4, color: 'white'}} >
+            <IconButton style={{backgroundColor: '#2A8FC5', borderRadius: 4, color: 'white'}} onClick={() => downloadResume()}>
               <GetAppIcon />
             </IconButton>
           </Box>
